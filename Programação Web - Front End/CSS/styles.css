@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D5CCC7; /* color4 */
+}
+
+header {
+    background-color: #261C1A; /* color1 */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 5px solid #AC8F83; /* color2 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+nav ul li a {
+    background-color: #AC8F83; /* color2 */
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ADA0A2; /* color3 */
+}
+
+main {
+    padding: 1em;
+    background-color: #fff;
+    margin: 1em auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-bottom: 100px;
+    
+}
+
+
+h2 {
+    color: #261C1A; /* color1 */
+}
+
+article {
+    background-color: #D5CCC7; /* color4 */
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+    border-left: 5px solid #AC8F83; /* color2 */
+}
+
+article h3 {
+    color: #261C1A; /* color1 */
+}
+
+footer {
+    background-color: #261C1A; /* color1 */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #AC8F83; /* color2 */
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    color: #261C1A; /* color1 */
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ADA0A2; /* color3 */
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #AC8F83; /* color2 */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ADA0A2; /* color3 */
+}
+
+.fotos-destaque {
+    width: 400px;
+}
+
+.destaque {
+    position: relative; /* Adiciona posição relativa para permitir sobreposição */
+    display: inline-block; /* Para que as divs fiquem em linha */
+    width: calc(33.33% - 20px); /* Define a largura de cada div, considerando um espaço entre elas */
+    margin: 5px 65px; /* Espaçamento entre as divs */
+    vertical-align: top; /* Alinha as divs no topo */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    overflow: hidden; /* Para que o texto não se estenda para fora da div */
+    background-color: #f2f2f2; /* Cor de fundo para as divs de destaque */
+    padding: 20px; /* Adiciona espaço interno */
+    box-shadow: 0 0 10px rgba(38, 28, 26, 0.5); /* Adiciona sombreamento */
+}
+
+.destaque img {
+    width: 100%; /* Ajusta o tamanho da imagem */
+    height: 200px; /* Define a altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço da div */
+}
+
+.destaque p {
+    margin-top: 5px; /* Espaçamento superior para o texto */
+    
+}
+
+section {
+    text-align: center;
+    font-size: 18px;
+}
+
+.sub-conteudo-destaque {
+    color: #f2f2f2;
+    background-color: #261C1A; /* Cor de fundo para a seção "Bem-vindo ao Blog de Leitura" */
+    border-radius: 20px; /* Arredonda as bordas da seção */
+    padding: 20px; /* Adiciona espaço interno */
+    font-size: 28px;
+}
+
+.lista-livros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.livro li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #261C1A; /* color1 */
+}
+
+.imagem-livros {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.imagem-livros:hover {
+    transform: scale(1.1);
+}
+
